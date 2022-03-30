@@ -1,1 +1,228 @@
 
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: flex-start;
+    background-color: rgba(204, 203, 203, 0.192);
+    font-family: Arial, Helvetica, sans-serif;
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+#tempImg{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.card {
+    background-color: #000000d0;
+    color: #fff;
+    padding: 2rem;
+    border-radius: 30px;
+    width: 100%;
+    max-width: 500px;
+    margin: 1rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+  }
+
+  
+.temp {
+    margin: 20px 0;
+    font-size: 3rem;
+  }
+  .wind,
+.vejo-gusiai,
+.sunset,
+.sunrise,
+.dayLong,
+.feels-like,
+.vejo-kryptis,
+.humidity,
+.aprasymas,
+i{
+  font-size: 1.5rem;
+}
+input.search-bar,
+.input{
+    border: none;
+    padding: 0.5rem;
+    border-radius: 24px;
+    background-color: #7c7c7c2b;
+    color: #fff;
+    font-size: 2rem;
+    width: 100%;
+    border: 1px solid white;
+  }
+  
+.search {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+section{
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding-bottom: 12vh;
+}
+
+.calculator{
+    padding: 40px;
+    /*border: 1px solid rgb(219, 213, 213);*/
+    border-radius: 30px;
+    grid-area: calculator;
+    max-width: 100%;
+    background-color: #000000d0;
+}
+#weatherDay{
+    font-weight: 400;
+}
+.input{
+    width: 100%;
+    height: 75px;
+    border: 1px solid rgb(219, 213, 213);
+    margin-bottom: 25px;
+    font-size: 40px;
+    text-align: end;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-right: 10px;
+}
+.timer,.weather{
+    font-size: 50px;
+    margin-bottom: 50px;
+    margin-top: 50px;
+    color: #fff;
+    line-height: 30px;
+}
+.timer{
+    grid-area: timer;
+    max-width: 500px;
+    padding: 10px;
+    text-align: center;
+    background-color: #000000d0;
+    border-radius: 30px;
+    padding: 15px;
+    font-size: 50px;
+}
+.weatherCard{
+    grid-area: weather;
+    height: 50;
+    display: flex;
+    flex-direction: row;
+    align-self: center;
+}
+.cardOptions>*{
+    display: flex;
+    flex-direction: column;
+    background-color: #000000d0;
+    color: #ffffff;
+    padding: 25px;
+    margin: 25px;
+    border-radius: 30px;
+    font-size: 2rem;
+}
+.cardToday{
+    border: 2px solid white;
+}
+.cardWeek:hover{
+    border: 1px solid white;
+}
+
+h2{
+    font-size: 3rem;
+}
+.buttons{
+    display:grid;
+    grid-template-columns: 80px 80px 80px 80px;
+    grid-template-rows: 50px 50px 50px 50px 50px;
+    grid-template-areas:
+    "plus minus multiply divide"
+    "seven eight nine equal"
+    "four five six equal"
+    "one two three equal"
+    "zero point clear equal";
+    column-gap: 25px;
+    row-gap: 15px;
+    justify-self: stretch;
+}
+
+.buttons>*{
+    font-size: 25px;
+    border-radius: 5px;
+    border: 1px solid rgb(202, 190, 190);
+    /*background-color: #ccc5c5;*/
+    /* background-color: transparent; */
+}
+.buttons>*:hover,
+.input:hover{
+    transition: 0.15s;
+    transition-timing-function: ease-in-out;
+    border: solid white 1px;
+}
+img{
+    size: 10px;
+}
+#plus{
+    grid-area: plus;
+}
+#minus{
+    grid-area: minus;
+}
+#multiply{
+    grid-area: multiply;
+}
+#divide{
+    grid-area: divide;
+}
+#seven{
+    grid-area: seven;
+}
+#eight{
+    grid-area: eight;
+}
+#nine{
+    grid-area: nine;
+}
+#equal{
+    grid-area: equal;
+}
+#four{
+    grid-area: four;
+}
+#five{
+    grid-area: five;
+}
+#six{
+    grid-area: six;
+}
+#one{
+    grid-area: one;
+}
+#two{
+    grid-area: two;
+}
+#three{
+    grid-area: three;
+}
+#zero{
+    grid-area: zero;
+}
+#point{
+    grid-area: point;
+}
+#clear{
+    grid-area: clear;
+}
+
+
